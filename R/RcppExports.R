@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 computeR0bar <- function(vec, numPerm = 100L) {
-    .Call(`_sharpeRratio_computeR0bar`, vec, numPerm)
+    .Call(`_sharpeRratioTwo_computeR0bar`, vec, numPerm)
 }
 

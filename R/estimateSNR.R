@@ -1,5 +1,5 @@
-library("ghyp")
-library("Rcpp")
+#library("ghyp")
+#library("Rcpp")
 
 
 a=get(load("data/a_vs_R0dN.rda"))
@@ -51,5 +51,5 @@ estimateSNR=function(x,numPerm=1000,nu=NA){
 }
 
 .onUnload <- function (libpath) {
-  library.dynam.unload("sharpeRratio", libpath)
+  library.dynam.unload("sharpeRratioTwo", libpath)
 }

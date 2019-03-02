@@ -35,7 +35,6 @@ int num_records_down(NumericVector x){
 
 
 // [[Rcpp::export]]
-
 double computeR0bar(NumericVector vec,int numPerm=100){
   int N=vec.size();
   NumericVector cumvec(N);

@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // computeR0bar
 double computeR0bar(NumericVector vec, int numPerm);
-RcppExport SEXP _sharpeRratio_computeR0bar(SEXP vecSEXP, SEXP numPermSEXP) {
+RcppExport SEXP _sharpeRratioTwo_computeR0bar(SEXP vecSEXP, SEXP numPermSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,11 +19,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_sharpeRratio_computeR0bar", (DL_FUNC) &_sharpeRratio_computeR0bar, 2},
+    {"_sharpeRratioTwo_computeR0bar", (DL_FUNC) &_sharpeRratioTwo_computeR0bar, 2},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_sharpeRratio(DllInfo *dll) {
+RcppExport void R_init_sharpeRratioTwo(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
